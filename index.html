@@ -1,54 +1,25 @@
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <title>Portfolio Yrgo</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <link rel="stylesheet" href="normalize.css" type="text/css">
-</head>
-
-<body>
-
-  <div class="container">
-    <div class="sidebar">
-      <nav>
-        <ul>
-          <li><a href="about.html">Om mig</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-          <li><a href="Målsättning.html">Målsättning</a></li>
-          <li><a href="träning.html">Träning</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="content">
-      <section class="hero">
-        <img src="img/kj@2x.png" />
-        <div class="hero-content">
-          <h1>Passionerad<br>Webbutvecklare</h1>
-          <p>Jag är en blivande webbutvecklare
-            med en passion för webbutveckling.
-            Portfolion skapades med hjälp av Adobe XD och Atoms textredigerare med språken HTML och CSS.</p>
-          <a class="action-btn" href="kontakt.html">Anlita mig</a>
-        </div>
-      </section>
-    </div>
-    <div class="footer">
-      <footer>
-        <ul>
-          <li><a href="https://www.instagram.com/karljohanlundholm/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
-                <image width="64" height="64" xlink:href="data:image/png;base64,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" /></svg>
-              <p>100K</p>
-            </a></li>
-          <li><a href="https://www.facebook.com/KarlJohanLundholm"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
-                <image width="64" height="64" xlink:href="data:image/png;base64,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" /></svg>
-              <p>65K</p>
-            </a></li>
-        </ul>
-      </footer>
-    </div>
-  </div>
-
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Personal WebSite</title>
+  </head>
+  <body>
+<div class="box">
+  <img src="kj.jpg" alt="" class="box-img">
+  <h1>Karl-Johan</h1>
+<h5> Web Developer</h5>
+<div>
+<p>Exploring the world of programming</p>
+</div>
+<ul>
+<li><a href="https://www.facebook.com/KarlJohanLundholm"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+<li><a href="https://www.instagram.com/karljohanlundholm/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+<li><a href="http://www.snapchat.com/add/karljohanlundh" class="fa fa-snapchat-ghost"></a>
+</ul>
+</div>
 </body>
-
 </html>
